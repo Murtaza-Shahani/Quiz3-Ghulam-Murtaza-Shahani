@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="left-column">
+            <div class="brand-text">Pisocial</div>
+    
+            <button class="signup-btn" onclick="showSignupForm('LinkedIn')">
+                <i class="fab fa-linkedin-in"></i><ion-icon name="logo-linkedin"></ion-icon>Sign up with LinkedIn
+            </button>
+    
+            <button class="signup-btn" onclick="showSignupForm('Facebook')">
+                <i class="fab fa-facebook-f"></i><ion-icon name="logo-facebook"></ion-icon>Sign up with Facebook
+            </button>
+    
+            <button class="signup-btn" onclick="showSignupForm('Twitter')">
+                <i class="fab fa-twitter"></i><ion-icon name="logo-twitter"></ion-icon>Sign up with Twitter
+            </button>
+        </div>
+        <div class="col-sm-12 col-lg-6 col-md-6">
+            <!-- Email and Password Form -->
+            <div class="card email-password-form">
+                <div id="emailPasswordForm">
+                    <h1 class="text-center mb-4"><span id="signupText">Sign Up</span></h1>
+                    <p id="getStartedText">Get started absolutely free</p>
+                    <div id="selectedProvider"></div>
+                    <form id="signupForm" onsubmit="printValues(event)">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="agreeCheckbox" required>
+                            <label class="form-check-label" for="agreeCheckbox">I agree to the Terms and Policies</label>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/Assets/js/script.js"></script>
+</body>
+</html>

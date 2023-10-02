@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+}
+
+.left-column {
+flex: 1;
+background: url('img.jpg') center/cover; /* Adjust the image path and properties */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.brand-text {
+position: absolute;
+top: 1em;
+left: 1em;
+font-size: 1em;
+font-weight: bold;
+color: #fff;
+}
+
+.signup-btn {
+width: 300px;
+padding: 10px;
+margin: 10px;
+text-align: center;
+color: #000; /* Black text color */
+background-color: #fff; /* White background */
+border: none;
+border-radius: 10px; /* Rounded corners */
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+background-color: #f2f2f2; /* Light gray on hover */
+}
+
+.signup-btn i {
+margin-right: 10px;
+}
+
+
+
+body {
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-button {
+    width: 100%;
+    margin: 15px 0; /* Added top and bottom margin */
+    padding: 15px; /* Increased padding for more height and width */
+    border: none;
+    border-radius: 8px; /* Increased border radius for a rounder appearance */
+    cursor: pointer;
+    background-color: #f5f5f5; /* Light gray background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-button:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+.social-button img {
+    width: 30px; /* Adjusted image width */
+    margin-right: 15px; /* Adjusted margin for more spacing */
+}
+
+.linkedin {
+    color: #0077B5;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+/* Add margin to the last child of .social-button */
+.social-button:last-child {
+    margin-bottom: 0;
+}
+
+.email-password-form {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+#signupText {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#getStartedText {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
